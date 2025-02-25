@@ -1,0 +1,26 @@
+<div class="card">
+<form (submit)="onSubmit()" class="form-content">
+    <div class="col">
+        <div class="item">
+            <label for="initial">Inversión Inicial</label>
+            <input id="initial" type="number" class="input-form" name="initial" [(ngModel)]="enterInitialInvestment">
+            
+        </div>
+        <div class="item">
+            <label for="anual">Inversión Anual</label>
+            <input id="anual" type="number" name="anual" class="input-form" [(ngModel)]="enterAnualInvestment">
+        </div>
+    </div>
+    <div class="col">
+        <div class="item">
+            <label for="expected">Rendimiento esperado</label>
+            <input id="expected" type="number" name="expected" class="input-form" [(ngModel)]="enterExpectedReturn">
+        </div>
+        <div class="item">
+            <label for="years">Años de inversión</label>
+            <input id="years" type="number" name="years" class="input-form" [(ngModel)]="duration">
+        </div>
+    </div>    
+    <button>Calcular</button>
+</form>
+</div>
